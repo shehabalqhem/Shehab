@@ -1,14 +1,17 @@
-apply plugin: 'com.android.application'
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
 
-android {
-    namespace 'com.shehab.store'
-    compileSdk 34
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.3'
+    }
+}
 
-    defaultConfig {
-        applicationId 'com.shehab.store'
-        minSdk 23
-        targetSdk 34
-        versionCode 1
-        versionName '1.0'
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
