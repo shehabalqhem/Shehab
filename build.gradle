@@ -1,0 +1,14 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.shehab.store'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.shehab.store'
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+}
